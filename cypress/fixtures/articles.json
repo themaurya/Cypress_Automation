@@ -1,0 +1,44 @@
+{
+    "articles": [
+      {
+        "slug": "This-is-my-title-111435",
+        "title": "Title 1",
+        "description": "This is my description",
+        "body": "This is body of my article",
+        "tagList": [],
+        "createdAt": "2022-11-02T10:42:13.515Z",
+        "updatedAt": "2022-11-02T10:42:13.515Z",
+        "favorited": false,
+        "favoritesCount": 1,
+        "author": {
+          "username": "Sanjay Maurya",
+          "bio": null,
+          "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+          "following": false
+        }
+      },
+      {
+        "slug": "At-quia-eos-consectetur-reiciendis-unde-rerum-ducimus-vitae-et-exercitationem-quas-labore-unde-reiciendis-quas-in-exercitationem-cupiditate-at-reiciendis-qui-nulla-at-cupiditate-reiciendis-voluptatibus-facilis-hic-fugit-ullam-rerum-rerum-fugit-aliquid-consequuntur-quae-reiciendis-sapiente-tenetur-quos-reiciendis-neque-error-asperiores-sequi-hic-enim-tenetur-error.-Blanditiis-beatae-quia-tenetur-esse.-Reiciendis-voluptatibus-numquam-beatae-id-repellat-possimus-sunt.-At-dicta-repellat-dicta-nihil-nostrum-qui-consectetur.-Voluptatibus-esse-voluptatem-aut-fugit-numquam-eos-hic-dolores-nihil-maiores-esse-dicta-cupiditate-possimus-sunt-nihil-voluptate-omnis-enim-at-quae-dicta-necessitatibus.-105578",
+        "title": "Title 2",
+        "description": "Veniam commodi autem voluptatibus eos dolor quas reprehenderit. Praesentium cupiditate tempore et reprehenderit. Deleniti exercitationem illum maiores. Reprehenderit odio in ea voluptatem ut ut ullam.",
+        "body": "Minima qui ut nulla eius.\\nA incidunt ipsum tempore porro tempore.\\nFugit quas voluptas ducimus aut.\\nTempore nostrum velit expedita voluptate est.\\nNam iste explicabo tempore impedit voluptas. Non natus nihil. Ipsam voluptate fugiat iusto illo dignissimos rerum sint placeat.\\nLabore sit omnis. Laborum excepturi numquam sequi reiciendis voluptate repellat sint.\\nQui inventore ipsam voluptatem sit quos.\\nDolorem aut quod suscipit fugiat culpa.\\nOdio nostrum praesentium accusantium dolor quo. Deserunt ab porro similique est accusamus id enim aut suscipit.\\nSoluta reprehenderit error nesciunt odit veniam sed.\\nDolore optio qui aut ab.\\nAut minima provident eius repudiandae a quibusdam in nisi quam. Doloribus consequatur et labore suscipit deserunt tempore ad quasi sed.\\nQuam cupiditate modi dolor et eos et culpa qui.\\nDelectus molestias ea id.\\nIllum ea unde sapiente non non non.\\nDolorem ut sed magni. Non enim expedita maiores incidunt voluptatem rem.\\nEt nam vel nihil non non.\\nVoluptates accusantium aut nisi et error doloribus molestiae voluptas soluta. Ipsa laudantium deserunt. Officia consectetur quibusdam velit debitis porro quia cumque.\\nSuscipit esse voluptatem cum sit totam consequatur molestiae est.\\nMollitia pariatur distinctio fugit. Autem reiciendis provident iure possimus.\\nOccaecati soluta quibusdam libero tenetur minus vel sit illo.\\nCulpa optio dolorem eos similique voluptatem voluptatibus error accusantium.",
+        "tagList": [
+          "qui",
+          "et",
+          "nihil",
+          "ducimus"
+        ],
+        "createdAt": "2022-10-09T10:14:34.005Z",
+        "updatedAt": "2022-10-09T10:14:34.005Z",
+        "favorited": false,
+        "favoritesCount": 5,
+        "author": {
+          "username": "Magda Parry",
+          "bio": null,
+          "image": "https://api.realworld.io/images/demo-avatar.png",
+          "following": false
+        }
+      }
+    ],
+    "articlesCount": 2
+  }

@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-10T07:45:18.857Z",
+    "end": "2022-10-10T07:45:30.176Z",
+    "duration": 11319,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0b1b90b0-4f5e-42cd-b471-e1c8e1ae581c",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\Test8Framework.js",
+      "file": "cypress\\integration\\examples\\Test8Framework.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4af5cc88-087c-4f77-9981-798e9950b9c1",
+          "title": "my iFrame testSuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "my iFrame test case",
+              "fullTitle": "my iFrame testSuite my iFrame test case",
+              "timedOut": null,
+              "duration": 9315,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const homePage = new _HomePage.default();\nconst productPage = new _ProductPage.default();\ncy.visit(Cypress.env('url'));\nhomePage.getEditBox().type(this.data.name);\nhomePage.getEditBox().should('have.attr', 'minlength', '2');\nhomePage.getGender().select(this.data.gender);\nhomePage.getTwoWayDataBinding().should('have.value', this.data.name);\nhomePage.getEntrepreneaurRadioBtn().should('be.disabled');\nhomePage.getShopTab().click(); //validate price amount\nthis.data.productName.forEach(function (element) {\n  cy.selectProduct(element);\n});\nproductPage.getCheckoutBtn().click();\nvar total = 0;\ncy.get('tr td:nth-child(4) strong').each(($el, index, $list) => {\n  const price = $el.text();\n  var price1 = price.split(\" \");\n  price1 = price1[1].trim();\n  total = total + Number(price1);\n}).then(function () {\n  cy.get('h3 strong').then(function (element) {\n    const actualVal = element.text();\n    var TotalVal = actualVal.split(\" \");\n    TotalVal = TotalVal[1].trim();\n    expect(total).to.equal(Number(TotalVal));\n  });\n});\nproductPage.checkoutSuccess().click();\nproductPage.deliveryLocation().type('India'); // Cypress.config('defaultCommandTimeout',12000)\nproductPage.selectLocation().click();\nproductPage.checkbox().click({\n  force: true\n});\nproductPage.puchase().click(); // productPage.successMessage().should('have.text',' Thank you! Your order will be delivered in next few weeks :-).')\nproductPage.successMessage().then(function (element) {\n  const alert = element.text();\n  expect(alert.includes(\"Success!\")).to.be.true;\n});",
+              "err": {},
+              "uuid": "81120ac7-6af7-4601-81d8-ec83eb1b69ab",
+              "parentUUID": "4af5cc88-087c-4f77-9981-798e9950b9c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "81120ac7-6af7-4601-81d8-ec83eb1b69ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9315,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
